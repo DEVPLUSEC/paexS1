@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="paexS1.paginas.login"
+             Title="Inicio de sesión"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame>
+                <Image Source="https://i1.wp.com/www.aiesec.org.ec/wp-content/uploads/2018/10/uisrael.png?ssl=1"></Image>
+            </Frame>
+
+            
+
+                <Grid Margin="10" >
+                    
+                    <!-- Filas -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <!-- Columnas -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    
+                    <!-- campos de texto -->
+                    <Label Text="Usuario" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center"></Label>
+                    <Label Text="Contraseña" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center"></Label>
+                    
+                    <!-- campos de datos -->
+                    <Entry x:Name="txtUsuario" Grid.Row="0" Grid.Column="1" Text="Miguel"></Entry>
+                <Entry x:Name="txtContrasena" IsPassword="True" Grid.Row="1" Grid.Column="1" Text="12345"></Entry>
+
+                </Grid>
+                
+         
+
+            <Frame>
+                <!-- Boton de accion -->
+                <Button x:Name="btnComprobar" Text="Iniciar sesion" Clicked="btnComprobar_Clicked" BackgroundColor="CadetBlue" TextColor="White" ></Button>
+            </Frame>
+   
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
